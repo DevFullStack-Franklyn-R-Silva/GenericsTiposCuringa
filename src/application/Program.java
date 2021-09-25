@@ -33,21 +33,3 @@ public class Program {
 		}
 	}
 }
-# GenericsTiposCuringa
-## Generics são invariantes
-
-
-### List<Object> não é o supertipo de qualquer tipo de lista: 
-  
-```java
-List<Object> myObjs = new ArrayList<Object>();
-List<Integer> myNumbers = new ArrayList<Integer>();
-myObjs = myNumbers; // erro de compilação
-```
-### O supertipo de qualquer tipo de lista é List<?>. Este é um tipo curinga:
-
-```java
-List<?> myObjs = new ArrayList<Object>();
-List<Integer> myNumbers = new ArrayList<Integer>();
-myObjs = myNumbers;
-```
